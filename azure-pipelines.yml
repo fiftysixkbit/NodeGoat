@@ -28,5 +28,7 @@ steps:
     polarisApplicationName: 'byip-NodeGoat'
     polarisProjectName: 'NodeGoat'
     polarisBranchName: 'main'
-    coverityArgsForPolaris: '--config-override analyze.mode=hfi --config-override analyze.files.exclude-regex=.*/test/.*'
+    #coverityArgsForPolaris: '--config-override analyze.mode=hfi --config-override analyze.files.exclude-regex=.*/test/.*'
+  #env:
+    #COVERITY_ARGS: '--config-override analyze.mode=hfi --config-override analyze.files.exclude-regex=.*/test/.*'
 
