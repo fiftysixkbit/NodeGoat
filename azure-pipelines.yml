@@ -25,3 +25,4 @@ steps:
     polarisServerUrl: 'https://poc.polaris.blackduck.com'
     polarisAccessToken: 's4jpgckfat47f3dcaebrc486ljbhac6bmho4aksfl2mfdd7e9slgsu2cqt29foqcsf23g2e1tbf3o'
     polarisAssessmentTypes: 'SAST, SCA'
+    coverityArgsForPolaris: '--config-override analyze.mode=hfi --config-override analyze.files.exclude-regex=.*/test/.*'
