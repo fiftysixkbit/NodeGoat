@@ -17,6 +17,11 @@ steps:
 
 - script: |
     npm install
-    npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm install'
 
+- task: BlackDuckSecurityScan@2
+  inputs:
+    scanType: 'polaris'
+    polarisServerUrl: 'https://poc.polaris.blackduck.com'
+    polarisAccessToken: 's4jpgckfat47f3dcaebrc486ljbhac6bmho4aksfl2mfdd7e9slgsu2cqt29foqcsf23g2e1tbf3o'
+    polarisAssessmentTypes: 'SAST, SCA'
